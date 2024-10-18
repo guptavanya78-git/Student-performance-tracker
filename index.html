@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Tracker</title>
+</head>
+<body>
+    <h1>Welcome to Student Performance Tracker</h1>
+    <form action="/add_student" method="POST">
+        <h2>Add Student</h2>
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="text" name="roll_number" placeholder="Roll Number" required>
+        <button type="submit">Add Student</button>
+    </form>
+
+    <form action="/add_grade" method="POST">
+        <h2>Add Grades</h2>
+        <input type="text" name="roll_number" placeholder="Roll Number" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <input type="number" name="grade" placeholder="Grade" min="0" max="100" required>
+        <button type="submit">Add Grade</button>
+    </form>
+
+    <form action="/view_student" method="POST">
+        <h2>View Student</h2>
+        <input type="text" name="roll_number" placeholder="Roll Number" required>
+        <button type="submit">View Student</button>
+    </form>
+</body>
+</html>
